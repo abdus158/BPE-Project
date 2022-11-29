@@ -1,4 +1,38 @@
-When customer visit our website and then click on service option and send us their quote with requirements after that
-we read and discuss the requirements and consider provided quote and its changes,if our requirements or budget are 
-fulfil we accept the requirements,otherwise we send the message about requirements are not fulfil or budget is too low 
-and send the budget list or otherwise if we are not able to fulfil thier requirements we can simply cancle theirs quote.
+IT Services:
+1.Catalog Of Services:(Tayyab) :-
+We are providing multiple services on our websites.We are providing all types of services including Marketing and 
+Constrcutions of softwares also;
+The Catalog Of our Services are:
+    1) Website Development :- We can develop all types of websites for user in very affordable prices.
+    The types of websites includes Blogging And E-Commerce both 
+    2) Graphic Designing :- We can design all types of logos,posters,banners,card, editing a photo and a video also and 
+    further more.
+    3) Business Development :- We can help you to develop your business in an best way where you can earn money easily.
+    4) Dispatching :- We also provide you the Dispatching services for your comapny or for your organization.
+    5) Design And Creativity :- By design and creativity we enhance the design or website user interface and graphic
+    Designing all types also.If we dont have creativity in Designing then we are not able to do best work in our field.
+    6) SEO Expert :- We can optimize or rank your website to the top of all websites which related search.By doing S.E.O
+    we bost your website ranking. 
+    7) Virtual Assistant :- We also provide service of virtual assistant for your business and also for your digital 
+    store.
+    8) Content Writing :- We also provide you the service of content Writing which will help you to write Articles,
+    Blogs,Digital Media Posts,News and futher more. 
+    9) Email Support :- We also provide Email or Chat Support services for your Business.
+    10) Data Entry :- Right now data entry job is the most required services in digital or physical world . Every big or
+    small organization need a person who was able to enter their data on their databases or on excel sheet.
+    11) DataBase Development :-
+    Database development also the most required job postion in this present world every organization need a person who 
+    can develop their databases by which they dont need to use outsider services as a database or by this prevention they 
+    can secure their data in an organized way.  
+2.Request a Service:(Najeeb) :-
+3.Provision Of Services:(Ammar Shaikh) :-
+When customer visit our website and then click on service option and send us their quote with their desired
+requirements after that we read and discuss their requirements and consider their provided quote,if we are able to 
+fulfill their requirements in their provided rate then we do that,otherwise we send them a message about that it is
+not possible to fulfill your requirements in your desired amount of money and we provide our required amount of money for
+your requirements because your bugdet is too low. And if we are not able to fulfil thier requirements then we can simply
+cancle or reject their quote.
+4.Feedback:(Tayyab) :-
+When we provide our services then customer show their satisfaction or dissatisfaction by the way of Feedback.
+Customer or User provide feedback after using the services for some period of time.
+
