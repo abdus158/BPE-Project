@@ -1,4 +1,4 @@
-1)When customer visit our website and then click on service option and send us their quote with requirements after that
+When customer visit our website and then click on service option and send us their quote with requirements after that
 we read and discuss the requirements and consider provided quote and its changes,if our requirements or budget are 
 fulfil we accept the requirements,otherwise we send the message about requirements are not fulfil or budget is too low 
 and send the budget list or otherwise if we are not able to fulfil thier requirements we can simply cancle theirs quote.
