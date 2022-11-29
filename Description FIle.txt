@@ -1,10 +1,1 @@
-IT Services:
-1.Catalog Of Services:(Tayyab)
-we are providing multiple services from our websites.
-
-2.Request a Service:(Najeeb)
-3.Provision Of Services:(Ammar Shaikh)
-provision of services means commercial activities whereby a party (hereinafter referred to as the service provider) is obliged to provide a service to another party and receive payment; the service-using party (hereinafter referred to as the customer) is obliged to pay to the service provider and use the service as agreed.
-
-4.Feedback:(Tayyab)
-5. abcd
+1) when customer visit our website and then click on service option and send us their quote with requirements after that we read and discuss the requirements and consider provided quote and its changes,if our requirements or budget are fulfil we accept the requirements,otherwise we send the message about requirements are not fulfil or budget is too low and send the budget list or otherwise if we are not able to fulfil thier requirements we can simply cancle theirs quote.
