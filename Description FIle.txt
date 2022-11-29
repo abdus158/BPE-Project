@@ -1,5 +1,7 @@
-IT Services:
-1.Catalog Of Services:(Tayyab) :-
+IT SERVICES:
+
+1.CATALOG OF SERVICES:(TAYYAB) :-
+
 We are providing multiple services on our websites.We are providing all types of services including Marketing and 
 Constrcutions of softwares also;
 The Catalog Of our Services are:
@@ -24,14 +26,19 @@ The Catalog Of our Services are:
     Database development also the most required job postion in this present world every organization need a person who 
     can develop their databases by which they dont need to use outsider services as a database or by this prevention they 
     can secure their data in an organized way.  
-2.Request a Service:(Najeeb) :-
-3.Provision Of Services:(Ammar Shaikh) :-
+
+2.REQUEST A SERVICE:(NAJEEB) :-
+
+3.PROVISION OF SERVICES:(AMMAR SHAIKH) :-
+
 When customer visit our website and then click on service option and send us their quote with their desired
 requirements after that we read and discuss their requirements and consider their provided quote,if we are able to 
 fulfill their requirements in their provided rate then we do that,otherwise we send them a message about that it is
 not possible to fulfill your requirements in your desired amount of money and we provide our required amount of money for
 your requirements because your bugdet is too low. And if we are not able to fulfil thier requirements then we can simply
 cancle or reject their quote.
-4.Feedback:(Tayyab) :-
+
+4.FEEDBACK:(TAYYAB) :-
+
 When we provide our services then customer show their satisfaction or dissatisfaction by the way of Feedback.
 Customer or User provide feedback after using the services for some period of time.
