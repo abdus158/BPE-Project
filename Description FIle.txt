@@ -29,6 +29,9 @@ The Catalog Of our Services are:
 
 2.REQUEST A SERVICE:(NAJEEB) :-
 
+A service request may be defined as a formal request that a client makes, asking a service provider that is he able to 
+fulfill their requirement in their desired rates.
+
 3.PROVISION OF SERVICES:(AMMAR SHAIKH) :-
 
 When customer visit our website and then click on service option and send us their quote with their desired
