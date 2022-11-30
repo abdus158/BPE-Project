@@ -2,8 +2,9 @@ IT Services:
 
 1.Catalog Of Services(Tayyab): We are providing multiple services from our websites.
 
-2.Request a Service(Najeeb): A service request may be defined as a formal request that a client makes, asking a service provider to provide them with something that would be useful in the business's day-to-day operations.
-
-3.Provision Of Services(Ammar Shaikh): Provision of services means commercial activities whereby a party (hereinafter referred to as the service provider) is obliged to provide a service to another party and receive payment; the service-using party (hereinafter referred to as the customer) is obliged to pay to the service provider and use the service as agreed.
+2.Request a Service(Najeeb):
+ A service request may be defined as a formal request that a client makes, asking a service provider that is he able to 
+ fulfill their requirement in their desired rates. 
+ 3.Provision Of Services(Ammar Shaikh): Provision of services means commercial activities whereby a party (hereinafter referred to as the service provider) is obliged to provide a service to another party and receive payment; the service-using party (hereinafter referred to as the customer) is obliged to pay to the service provider and use the service as agreed.
 
 4.Feedback(Tayyab):
