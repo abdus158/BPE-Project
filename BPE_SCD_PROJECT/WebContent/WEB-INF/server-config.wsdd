@@ -1,0 +1,125 @@
+<ns1:deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:ns1="http://xml.apache.org/axis/wsdd/">
+ <ns1:globalConfiguration>
+  <ns1:parameter name="sendMultiRefs" value="true"/>
+  <ns1:parameter name="disablePrettyXML" value="true"/>
+  <ns1:parameter name="adminPassword" value="admin"/>
+  <ns1:parameter name="attachments.Directory" value="D:\Eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BPE_SCD_PROJECT\WEB-INF\attachments"/>
+  <ns1:parameter name="dotNetSoapEncFix" value="true"/>
+  <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
+  <ns1:parameter name="sendXMLDeclaration" value="true"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
+  <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:requestFlow>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="session"/>
+   </ns1:handler>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="request"/>
+    <ns1:parameter name="extension" value=".jwr"/>
+   </ns1:handler>
+  </ns1:requestFlow>
+ </ns1:globalConfiguration>
+ <ns1:handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <ns1:handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <ns1:handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <ns1:service name="Request_A_Services" provider="java:RPC" style="wrapped" use="literal">
+  <ns2:operation name="rrequestAservixce" qname="ns1:rrequestAservixce" returnQName="ns1:rrequestAservixceReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
+   <ns2:parameter qname="ns1:customerID" type="xsd:int"/>
+   <ns2:parameter qname="ns1:requiredService" type="xsd:string"/>
+   <ns2:parameter qname="ns1:description" type="xsd:string"/>
+  </ns2:operation>
+  <ns1:parameter name="allowedMethods" value="rrequestAservixce"/>
+  <ns1:parameter name="wsdlPortType" value="Request_A_Services"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="schemaQualified" value="http://main"/>
+  <ns1:parameter name="wsdlServicePort" value="Request_A_Services"/>
+  <ns1:parameter name="className" value="main.Request_A_Services"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://main"/>
+  <ns1:parameter name="wsdlServiceElement" value="Request_A_ServicesService"/>
+ </ns1:service>
+ <ns1:service name="Services" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="serviceCatalog" qname="ns2:serviceCatalog" returnQName="ns2:serviceCatalogReturn" returnType="xsd:string" soapAction="" xmlns:ns2="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:parameter name="sendMultiRefs" value="false"/>
+  <ns1:parameter name="wsdlServicePort" value="Services"/>
+  <ns1:parameter name="schemaQualified" value="http://main"/>
+  <ns1:parameter name="className" value="main.Services"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="allowedMethods" value="serviceCatalog"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://main"/>
+  <ns1:parameter name="wsdlServiceElement" value="ServicesService"/>
+  <ns1:parameter name="wsdlPortType" value="Services"/>
+  <ns1:parameter name="sendXsiTypes" value="false"/>
+ </ns1:service>
+ <ns1:service name="AdminService" provider="java:MSG">
+  <ns1:parameter name="allowedMethods" value="AdminService"/>
+  <ns1:parameter name="enableRemoteAdmin" value="false"/>
+  <ns1:parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <ns1:namespace>http://xml.apache.org/axis/wsdd/</ns1:namespace>
+ </ns1:service>
+ <ns1:service name="Version" provider="java:RPC">
+  <ns1:parameter name="allowedMethods" value="getVersion"/>
+  <ns1:parameter name="className" value="org.apache.axis.Version"/>
+ </ns1:service>
+ <ns1:service name="Feedback" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="giveFeedback" qname="ns3:giveFeedback" returnQName="ns3:giveFeedbackReturn" returnType="xsd:string" soapAction="" xmlns:ns3="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns3:customerID" type="xsd:int"/>
+   <ns1:parameter qname="ns3:yourService" type="xsd:string"/>
+   <ns1:parameter qname="ns3:feedback" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="giveFeedback"/>
+  <ns1:parameter name="wsdlPortType" value="Feedback"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="schemaQualified" value="http://main"/>
+  <ns1:parameter name="wsdlServicePort" value="Feedback"/>
+  <ns1:parameter name="className" value="main.Feedback"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://main"/>
+  <ns1:parameter name="wsdlServiceElement" value="FeedbackService"/>
+ </ns1:service>
+ <ns1:service name="Customer" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="customerDetails" qname="ns4:customerDetails" returnQName="ns4:customerDetailsReturn" returnType="xsd:string" soapAction="" xmlns:ns4="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns4:name" type="xsd:string"/>
+   <ns1:parameter qname="ns4:email" type="xsd:string"/>
+   <ns1:parameter qname="ns4:phoneNo" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="customerDetails"/>
+  <ns1:parameter name="wsdlPortType" value="Customer"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="schemaQualified" value="http://main"/>
+  <ns1:parameter name="wsdlServicePort" value="Customer"/>
+  <ns1:parameter name="className" value="main.Customer"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://main"/>
+  <ns1:parameter name="wsdlServiceElement" value="CustomerService"/>
+ </ns1:service>
+ <ns1:service name="Provide_A_Services" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="provideService" qname="ns5:provideService" returnQName="ns5:provideServiceReturn" returnType="xsd:string" soapAction="" xmlns:ns5="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns5:custid" type="xsd:int"/>
+   <ns1:parameter qname="ns5:service" type="xsd:string"/>
+   <ns1:parameter qname="ns5:provisiondescription" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="provideService"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="Provide_A_Services"/>
+  <ns1:parameter name="className" value="main.Provide_A_Services"/>
+  <ns1:parameter name="wsdlServicePort" value="Provide_A_Services"/>
+  <ns1:parameter name="schemaQualified" value="http://main"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://main"/>
+  <ns1:parameter name="wsdlServiceElement" value="Provide_A_ServicesService"/>
+ </ns1:service>
+ <ns1:transport name="http">
+  <ns1:requestFlow>
+   <ns1:handler type="URLMapper"/>
+   <ns1:handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </ns1:requestFlow>
+  <ns1:parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <ns1:parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </ns1:transport>
+ <ns1:transport name="local">
+  <ns1:responseFlow>
+   <ns1:handler type="LocalResponder"/>
+  </ns1:responseFlow>
+ </ns1:transport>
+</ns1:deployment>

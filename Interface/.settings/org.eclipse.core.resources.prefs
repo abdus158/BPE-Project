@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/main/Feedback.java=UTF-8
+encoding//src/main/FeedbackService.java=UTF-8
+encoding//src/main/FeedbackServiceLocator.java=UTF-8
+encoding//src/main/FeedbackSoapBindingStub.java=UTF-8
+encoding//src/main/Provide_A_Services.java=UTF-8
+encoding//src/main/Provide_A_ServicesService.java=UTF-8
+encoding//src/main/Provide_A_ServicesServiceLocator.java=UTF-8
+encoding//src/main/Provide_A_ServicesSoapBindingStub.java=UTF-8
+encoding//src/main/Request_A_Services.java=UTF-8
+encoding//src/main/Request_A_ServicesService.java=UTF-8
+encoding//src/main/Request_A_ServicesServiceLocator.java=UTF-8
+encoding//src/main/Request_A_ServicesSoapBindingStub.java=UTF-8
+encoding//src/main/Services.java=UTF-8
+encoding//src/main/ServicesService.java=UTF-8
+encoding//src/main/ServicesServiceLocator.java=UTF-8
+encoding//src/main/ServicesSoapBindingStub.java=UTF-8

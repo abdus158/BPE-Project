@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://main" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://main" xmlns:intf="http://main" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://main" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="giveFeedback">
+    <complexType>
+     <sequence>
+      <element name="customerID" type="xsd:int"/>
+      <element name="yourService" type="xsd:string"/>
+      <element name="feedback" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="giveFeedbackResponse">
+    <complexType>
+     <sequence>
+      <element name="giveFeedbackReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="giveFeedbackRequest">
+
+      <wsdl:part element="impl:giveFeedback" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="giveFeedbackResponse">
+
+      <wsdl:part element="impl:giveFeedbackResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Feedback">
+
+      <wsdl:operation name="giveFeedback">
+
+         <wsdl:input message="impl:giveFeedbackRequest" name="giveFeedbackRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:giveFeedbackResponse" name="giveFeedbackResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="FeedbackSoapBinding" type="impl:Feedback">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="giveFeedback">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="giveFeedbackRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="giveFeedbackResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="FeedbackService">
+
+      <wsdl:port binding="impl:FeedbackSoapBinding" name="Feedback">
+
+         <wsdlsoap:address location="http://localhost:8080/BPE_SCD_PROJECT/services/Feedback"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

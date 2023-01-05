@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://main" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://main" xmlns:intf="http://main" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://main" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="provideService">
+    <complexType>
+     <sequence>
+      <element name="custid" type="xsd:int"/>
+      <element name="service" type="xsd:string"/>
+      <element name="provisiondescription" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="provideServiceResponse">
+    <complexType>
+     <sequence>
+      <element name="provideServiceReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="provideServiceResponse">
+
+      <wsdl:part element="impl:provideServiceResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="provideServiceRequest">
+
+      <wsdl:part element="impl:provideService" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Provide_A_Services">
+
+      <wsdl:operation name="provideService">
+
+         <wsdl:input message="impl:provideServiceRequest" name="provideServiceRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:provideServiceResponse" name="provideServiceResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="Provide_A_ServicesSoapBinding" type="impl:Provide_A_Services">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="provideService">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="provideServiceRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="provideServiceResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="Provide_A_ServicesService">
+
+      <wsdl:port binding="impl:Provide_A_ServicesSoapBinding" name="Provide_A_Services">
+
+         <wsdlsoap:address location="http://localhost:8080/BPE_SCD_PROJECT/services/Provide_A_Services"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
